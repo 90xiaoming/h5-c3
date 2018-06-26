@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            perspective: 800px;
+         } 
+        div {
+            width: 150px;
+            height: 150px;
+            margin:200px auto ;
+            background:url("./dog2.jpg") no-repeat center;
+            background-size: 80%;
+            position: relative;
+            /* perspective: 800px; */
+            transform-style: preserve-3d;
+            animation: move 5s linear infinite;
+            transition: all 3s;
+            }
+        @keyframes move {
+            100% {
+                transform:rotateY(360deg)  
+            }
+        }
+        img {
+            width: 150px;
+            position: absolute;
+            left:50%;
+            top:50%;
+        }
+        div:hover{
+            animation-play-state: paused;
+        }
+        .p1{
+            transform: translate(-50%,-50%) rotateY(0deg)  translateZ(200px)
+        }
+        .p2{
+            transform: translate(-50%,-50%) rotateY(60deg)  translateZ(200px)
+        }
+        .p3{
+            transform: translate(-50%,-50%) rotateY(120deg)  translateZ(200px)
+        }
+        .p4{ 
+            transform: translate(-50%,-50%) rotateY(180deg)  translateZ(200px)
+        }
+        .p5{
+            transform: translate(-50%,-50%) rotateY(240deg)  translateZ(200px)
+        }
+        .p6{
+            transform: translate(-50%,-50%) rotateY(300deg)  translateZ(200px)
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./dog.gif" class = "p1" alt="">
+        <img src="./dog.gif" class = "p2" alt="">
+        <img src="./dog.gif" class = "p3" alt="">
+        <img src="./dog.gif" class = "p4" alt="">
+        <img src="./dog.gif" class = "p5" alt="">
+        <img src="./dog.gif" class = "p6" alt="">
+    </div>
+</body>
+</html>

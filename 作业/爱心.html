@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    #bg{
+        width: 500px;
+        height: 500px;
+        background-color: pink;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        
+    }
+    .xin-1 ,.xin-2{
+        width: 250px;
+        height: 250px;
+        /* background-color:red; */
+        border-radius: 50%;
+        background:-webkit-linear-gradient(bottom,#8f1b1b,red);
+       /* box-shadow: #cb3636 8px 8px 8px; */
+       /* z-index: 3 */
+    }
+    .xin-1{
+        z-index: 2;
+         /* background:-webkit-linear-gradient(left,black,red) */
+    }
+    .xin-2{
+        z-index: 2
+    }
+    .z{
+        width: 250px;
+        height: 250px;
+        /* background-color: #8f1b1b; */
+        background:-webkit-linear-gradient(bottom,#8F1B15,#8f1b1b);
+        /* background:-webkit-linear-gradient(bottom,#8f1b1b,red); */
+        position: absolute;
+        top: 99px;
+        left: 143px;
+        transform: rotate(43deg);
+        /* box-shadow: #cb3636 8px 8px 8px; */
+        /* background:-webkit-linear-gradient(left,black,red) */
+    }
+    .xin-1,.xin-2{
+        animation: aa 3s linear infinite; 
+        
+    }
+    .z{
+        animation: bb 3s linear infinite; 
+    }
+    @keyframes aa{
+    50%{
+        transform: scale(0.9)
+        
+    }
+    100%{ 
+        transform: scale(1)
+    }
+}
+@keyframes bb{
+    50%{
+        transform: scale(0.9) rotate(43deg);
+    }
+    100%{ 
+        transform: scale(1) rotate(43deg);
+    }
+}
+    .xin-1{
+        position: absolute;
+        top: 20px;
+        left: 58px;
+        /* background:-webkit-linear-gradient(left,black,red) */
+    }
+    .xin-2{
+        position: absolute;
+        top: 20px;
+        left: 218px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div id="bg">
+        <div class="xin-1"></div>
+        <div class="xin-2"></div>
+        <div class="z"></div>
+    </div>
+</body>
+</html>
