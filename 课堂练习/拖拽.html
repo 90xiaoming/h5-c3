@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .div1{
+            width: 150px;
+            height: 150px;
+            border: red solid 1px;
+            /* display: inline-block; */
+            float: left;
+            margin-left: 20px;
+        }
+        .div2{
+            width: 150px;
+            height: 150px;
+            border: green solid 1px;
+            float: left;
+            margin-left: 20px;
+        }
+        #pe{
+            background-color: goldenrod;
+        }
+        .div3{
+            width: 150px;
+            height: 150px;
+            border: green solid 1px;
+            float: left;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1" id="div1">
+        <!-- 在H5中药拖拽元素，要为元素添加draggable="true" 图片，超链接默认可以拖拽-->
+        <p id="pe" draggable="true">试着把我拖过去</p>
+    </div>
+    <div class="div2" id="div2"></div>
+    <div class="div3"></div>
+    <script>
+    // 学习拖拽重点是学习拖拽事件
+    // 1.用于被拖拽元素的时间
+    var obj = null;
+        // var p =document.querySelector("#pe");
+        // var div2 = document.querySelector("#div2");
+        // var div1 = document.querySelector("#div1");
+    // ondrag 用于拖拽元素，整个拖拽过程都会调用
+    // ondragstart 用于拖拽元素，开始时候调用
+    // ondragleave用于拖拽元素，当鼠标离开拖拽元素时候调用
+    // ondragend用于拖拽元素，拖拽结束时候调用
+    document.ondragstart=function(e){
+        // console.log(e.target);
+        e.target.style.opacity=0.5
+        obj = e.target;
+        /*通过dataTransfer来实现数据的存储和获取
+        setData(format,data)
+        format:数据类型：text/html text/url-list
+        data:数据:一般来说是字符串值
+        */
+
+        e.dataTransfer.setData("text/html",e.target.id);
+    }
+    document.ondragend=function(e){
+        e.target.style.opacity=1;
+    }
+    document.ondragleave=function(){
+        
+    }
+    document.ondrag=function(){
+        
+    }
+    // 2.用于目标元素的时间
+    //  ondragenter 拖拽元素进入时候调用
+    //  ondragover 当停留在目标元素上时候调用
+    //  ondrop 当在目标元素松开鼠标时候调用
+    //  ondragleave    当鼠标离开目标元素时候调用
+    document.ondragenter=function(e){
+        console.log(e.target);
+        
+
+    }
+    document.ondragover=function(e){
+        
+        // 如果想触发ondrag事件，需要阻止浏览器的默认行为
+        e.preventDefault();
+    }
+    document.ondrop=function(e){
+        // e.target.appendChild(obj);
+        var id = e.dataTransfer.getData("text/html");
+        // console.log("id="+id);
+        e.target.appendChild(document.getElementById(id));
+        
+    }
+    document.ondragleave=function(){
+        
+    }
+    
+    </script>
+</body>
+</html>
