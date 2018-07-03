@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+ul{
+    list-style: none;
+}
+.qj{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 1000px;
+    background-color: #EEEEEE;
+}
+.top{
+    width: 100%;
+    max-width: 640px;
+    height: 40px;
+    position: relative;
+    background-color: white;
+}
+.top span{
+    position: absolute;
+    font-size: 21px;
+    left: 8px;
+    top: 9px;
+}
+.top p{
+    display: inline-block;
+    line-height: 40px;
+}
+.fanhui{
+    position:absolute;
+    left: 40px;
+}
+.top p:nth-child(3){
+    position: absolute;
+   left: 40%;
+    
+    
+}
+.yz{
+    width: 100%;
+    height: 160px;
+    background-color: white;
+    margin-top: 10px;
+}
+.yz li{
+    width: 100%;
+    height: 40px;
+    border-bottom: #ccc 1px solid;
+    line-height: 40px;
+    padding-left: 37px;
+}
+.yz input{
+    border: none;
+    /* display:inline; */
+}
+.btn{
+    width: 100%;
+    height: 40px;
+    margin-top: 10px;
+    background-color:#FFCF49;
+    color: white;
+    border: none;
+}
+
+.text-1{
+    width: 120px;
+}
+.btn-1{
+    cursor: pointer;
+}

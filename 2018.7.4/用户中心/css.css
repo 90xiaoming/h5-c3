@@ -1,0 +1,107 @@
+.qj{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 1000px;
+    background-color: #FAFAFA;
+}
+.top{
+    width: 100%;
+    max-width: 640px;
+    height: 40px;
+    position: relative;
+    background-color:#0099FF;
+    /* text-align: center;
+     */
+     
+    
+}
+.top span{
+    position: absolute;
+    top: 10px;
+    left: 48%;
+    color: white;
+}
+.dj{
+    position: relative;
+    width: 100%;
+    color: red;
+}
+.dj img{
+    width: 100%;
+}
+.dj div{
+    width: 21%;
+    height: 37%;
+    position: absolute;
+    background-color: #ccc;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    border-radius: 50%;
+    border: white 3px solid;
+}
+.dj i{
+    font-size: 3rem;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    z-index: 2;
+    
+}
+.dj p{
+    font-size: 83%;
+    position: absolute;
+    color: white;
+    /* top:50%; */
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+.nav{
+   margin-top: 10px;
+    background-color: white;
+
+}
+.nav li{
+    height: 40px;
+    line-height: 40px;
+    border-bottom: #ccc 1px solid;
+}
+.nav p{
+    margin-left: 15px;
+    display: inline-block;
+}
+.nav i{
+    margin-left:10px;
+}
+.icon-zhankai-copy{
+    margin-left:180px;
+}
+.footer{
+    margin-top: 150px;
+    width: 100%;
+    height: 40px;
+    background-color: white;
+    border-top: #ccc 1px solid;
+}
+.footer li{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+    
+}
+.footer p{
+    margin-left: -4px;
+    font-size: 10px;
+    
+}
+.footer span{
+    font-size: 25px;
+}
+.icon-wode,.last{
+    color: #0099FF;
+}

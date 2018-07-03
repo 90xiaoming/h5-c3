@@ -1,0 +1,217 @@
+.qj{
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    height: 1000px;
+    background-color: #ccc;
+}
+.top{
+    width: 100%;
+    max-width: 640px;
+    height: 40px;
+    position:fixed;
+    background-color: red;
+    z-index: 999;
+    
+}
+
+.top span{
+    position: absolute;
+    font-size: 26px;
+    top: 8px;
+    left: 8px;
+    color: white;
+}
+.top p{
+    position: absolute;
+    color: white;
+    top: 9px;
+    left: 45%;
+}
+.msg{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    top: 2.5%;
+    
+}
+.msg img{
+    width: 100%;
+    display: block;
+    
+}
+.msg .logo{
+    width: 24%;
+    position: absolute;
+    top: 16%;
+    left: 5%;
+}
+.msg .vip{
+    width: 5%;
+    position: absolute;
+    top: 43%;
+    left: 32%;
+    background-color: red;
+    
+}
+.msg .shop_umbrella{
+    width: 5%;
+    position: absolute;
+    top: 43%;
+    left: 39%;
+    background-color: red;
+}
+.msg .shop_silver{
+    width: 5%;
+    position: absolute;
+    top: 43%;
+    left: 46%;
+    background-color: red;
+}
+.msg .mz{
+    position: absolute;
+    color: white;
+    top:23%;
+    left: 33%;
+    font-size: 14px;
+}
+.msg span{
+    position: absolute;
+    font-size: 26px;
+    top:25%;
+    left: 90%;
+    color: white;
+}
+.msg ul{
+    width: 100%;
+    height: 25%;
+    position: absolute;
+    background: #a5c5d0;
+    /* opacity: 0.6; */
+    left: 0;
+    bottom: 0;
+   
+}
+.msg ul li{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    line-height: 100%;
+    padding-top: 2%;
+
+}
+.msg ul li:nth-child(1)::before{
+    content: "";
+    width: 1px;
+    height: 80%;
+    background: #E7E7E7;
+    position: absolute;
+    right: 66%;
+    top:12%;
+}
+.msg ul li:nth-child(2)::before{
+    content: "";
+    width: 1px;
+    height: 80%;
+    background: #E7E7E7;
+    position: absolute;
+    right: 34%;
+    top:12%;
+}
+.msg ul p{
+    margin-top: 1%;
+}
+.xz {
+   width: 100%;
+   position: relative;
+   top: 2.5%;
+   background-color:white;
+}
+.xz ul li{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+    text-align: center;
+
+}
+.xz ul li:nth-child(1)::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #E7E7E7;
+    position: absolute;
+    right: 34%;
+    top:0%;
+}
+.xz ul li:nth-child(2)::before{
+    content: "";
+    width: 1px;
+    height: 100%;
+    background: #E7E7E7;
+    position: absolute;
+    right: 66%;
+    top:0%;
+}
+.xz ul li:nth-child(4)::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #E7E7E7;
+    position: absolute;
+    right: 0%;
+    top:33%;
+}
+.xz ul li:nth-child(7)::before{
+    content: "";
+    width: 100%;
+    height: 1px;
+    background: #E7E7E7;
+    position: absolute;
+    right: 0%;
+    top:67%;
+}
+
+.xz img{
+    width: 50px;
+    height: 50px;
+    margin-top: 7px
+}
+.xz p{
+    margin-bottom: 11px;
+}
+.tp img{
+    width: 100%;
+    display: block;
+  
+}
+.fooder{
+    width: 100%;
+   height: 7%;
+    background-color:#fff;
+}
+.fooder li{
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    padding-top: 7px
+}
+.fooder span{
+    font-size: 35px;
+    color: #ccc;
+    
+}
+.fooder p{
+    color: #ccc;
+}
+.fooder .icon-shangjia3{
+    color: red
+}
+.fooder .sj{
+    color: red;
+}
+
+
