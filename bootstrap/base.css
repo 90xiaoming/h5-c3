@@ -1,0 +1,13 @@
+*{
+padding: 0;
+margin: 0;
+}
+ul{
+    padding-left: 130px;
+}
+ul.yi{
+    min-width: 50px;
+}
+ul.er{
+    min-width: 131px;
+}

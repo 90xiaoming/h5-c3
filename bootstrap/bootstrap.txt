@@ -1,0 +1,7 @@
+ 
+先引入bootstrap的CSS样式,jQuery ,bootstrap.min.js,然后在到官网复制代码.....需要修改的CSS的样式到自己的CSS里面填写覆盖之前bootstrap默认的..
+
+
+<link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.css">
+ <script src="./lib/jquery/jquery.min.js"></script>
+ <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
